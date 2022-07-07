@@ -113,6 +113,12 @@ export abstract class AbstractHub {
   }
 
   /**
+   * How long to wait for response before erroring out with TIMEOUT.
+   * @protected
+   */
+  public waitTimeout = 200
+
+  /**
    * init Hub, subclass should implement its own constructor
    */
   constructor(options?: IAbstractHubOptions) {
@@ -425,7 +431,7 @@ export abstract class AbstractHub {
         false,
       )
       this._runResponseCallback(resp)
-    }, WAIT_TIMEOUT)
+    }, this.waitTimeout)
   }
 
   protected static _wrapCallback(instance: AbstractHub, reqMsg: IRequest, callback: Function) {
