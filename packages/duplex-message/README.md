@@ -18,6 +18,13 @@
 
 <h4 align="center">A tinny(~3kb) utility that can simplify cross window / iframes / workers communications, even with progress feedback support.</h4>
 
+---
+
+Changes compared to the base (https://github.com/oe/duplex-message):
+- Can configure wait timeout - how long will hub wait for the reply from the other side (default: 200ms)
+
+---
+
 ## 📝 Table of Contents
 - [Features](#features)
 - [Install](#install)
