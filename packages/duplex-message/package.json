@@ -36,5 +36,9 @@
   "homepage": "https://github.com/oe/duplex-message/tree/master/packages/duplex-message",
   "devDependencies": {
     "@babel/core": "^7.14.0"
-  }
+  },
+  "gitHead": "00d976e4afa108113a45ba59c4451f49258aa420",
+	"publishConfig": {
+		"access": "public"
+	}
 }
