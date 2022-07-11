@@ -1,7 +1,7 @@
 {
   "npmClient": "yarn",
   "packages": [
-    "packages/*"
+    "packages/duplex-message"
   ],
   "command": {
     "publish": {
