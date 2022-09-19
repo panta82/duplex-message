@@ -124,7 +124,7 @@ export abstract class AbstractHub {
    * init Hub, subclass should implement its own constructor
    */
   constructor(options?: IAbstractHubOptions) {
-    this.waitTimeout = (options && options.waitTimeout!) || WAIT_TIMEOUT;
+    this.waitTimeout = (options && options.waitTimeout!) || WAIT_TIMEOUT
     this.instanceID = (options && options.instanceID) || AbstractHub.generateInstanceID()
     this._eventHandlerMap = []
     this._responseCallbacks = []
