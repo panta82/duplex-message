@@ -287,7 +287,7 @@ export abstract class AbstractHub {
       // timeout, in case of any delays
       setTimeout(() => {
         delete this._designedResponse[resp.messageID]
-      }, WAIT_TIMEOUT + 50)
+      }, this.waitTimeout + 50)
       return true
     }
     return false
